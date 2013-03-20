@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 ### Access Tokens
-Your application will need to be registered with the Starter League Portal before you can send OAuth reqeusts. Please contact <darby@starterleague.com> to get your access tokens.
+Your application will need to be registered with the Starter League Portal before you can send OAuth requests. Please contact <darby@starterleague.com> to get your access tokens.
 
 ### Rack apps
 OmniAuth::Strategies::StarterLeague can be used as a rack middleware with OmniAuth. See the OmniAuth [docs](https://github.com/intridea/omniauth).
