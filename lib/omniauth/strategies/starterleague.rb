@@ -14,7 +14,14 @@ module OmniAuth
 
       info do
         {
-          :email => raw_info["email"]
+          :email => raw_info["email"],
+          :first_name => raw_info["first_name"],
+          :last_name => raw_info["last_name"],
+          :twitter => raw_info["twitter"],
+          :github => raw_info["github"],
+          :blog => raw_info["blog"],
+          :avatar => raw_info["avatar"],
+          :courses => raw_info["courses"]
         }
       end
 
