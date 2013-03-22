@@ -34,6 +34,40 @@ If your Rails app is using Devise, you can use the omniauthable plugin to config
     # config/initializers/devise.rb
     config.omniauth :starterleague, APP_ID, APP_SECRET
 
+## Auth Hash
+Response example from `request.env['omniauth.auth']`:
+
+    {
+      "provider"=>"starterleague",
+      "uid"=>"<PORTAL_USER_ID>",
+      "info"=> {
+        "email" => "<USER_EMAIL>",
+        "first_name" => "<USER_FIRST_NAME>",
+        "last_name" => "<USER_LAST_NAME>",
+        "twitter" => "<TWITTER_USERNAME>",
+        "github" => "<GITHUB_USERNAME>",
+        "blog" => "<BLOG_URL>",
+        "avatar" => "<AVATAR_URL>",
+        "courses" => [
+          {
+            "id": <COURSE_ID>,
+            "name": "<COURSE_NAME>",
+            "quarter": "<COURSE_QUARTER>",
+            "day": "<COURSE_DAYS>",
+            "time": "<COURSE_TIMES>",
+            "location": "<COURSE_LOCATION>",
+            "starts_on": "<COURSE_START_DATE>",
+            "ends_on": "<COURSE_END_DATE>",
+            "role": "<USER_ROLE>"
+          }
+        ]
+      },
+      "credentials"=> {
+        "token"=>"<ACCESS_TOKEN>",
+        "expires"=>"<EXPIRATION_DATE>"
+      }
+    }
+
 ## Support
 Please contact <darby@starterleague.com> if you need any help getting things working.
 
