@@ -1,3 +1,5 @@
+**This repo is no longer maintained**, please see https://github.com/starterleague/omniauth-starterleague
+
 # OmniAuth::StarterLeague
 
 OmniAuth OAuth 2.0 Strategy for The Starter League Student Portal
